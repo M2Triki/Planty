@@ -26,15 +26,16 @@ add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 
 
 
-function filter_admin( $items, $args ) { // Faire disparaître Admin pour les clients
-    if ($args->theme_location === 'primary') {
-        if (!is_user_logged_in() || !current_user_can('manage_options')) {
-            $items = "<li>Admin</li>";
+function filter_admin( $items, $args ) {
+    if ( $args->theme_location === 'primary' ) {
+        if ( is_user_logged_in() && current_user_can('manage_options') ) {
+            $items .= "<li class='adminurl'><a href='" . admin_url() . "'>Admin</a></li>";
         }
     }
     return $items;
 }
 add_filter('wp_nav_menu_items', 'filter_admin', 10, 2);
+
 
 
 

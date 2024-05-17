@@ -17,10 +17,6 @@
     background-color: white;
 }
 
-.site-logo-img img {
-    max-width: 30%;
-}
-
 .item-commander a.menu-link {
     background-color:#DC9F96;
     font-weight: 600;
@@ -28,10 +24,29 @@
     padding: 0 50px;
 }
 
-a.menu-link {
+.item-commander a.menu-link:hover {
+    background-color: #C02E44;
+}
+
+#menu-item-51 {
+    order: 3;
+}
+
+.adminurl {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    justify-content: center;
+}
+
+a.menu-link, .adminurl a {
     font-size: 16px;
     font-weight: 400;
     color: #000000!important;
+}
+
+a.menu-link:hover, .adminurl a:hover {
+    font-weight: 600;
 }
 
 /***** FOOTER *****/
@@ -54,6 +69,18 @@ footer {
 /***** ACCUEIL *****/
 .image-galerie {
     width: 50%;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+  .image-container img {
+    padding: 0px 250px;
+    background-image: url("../../uploads/2024/05/feuille-left.png"), url("../../uploads/2024/05/feuille-right.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right center;
+    background-size: 50%, 50%;
 }
 
 .fontweight-400 {
@@ -105,7 +132,9 @@ footer {
 .wpcf7 form {
     display: grid;
     justify-content: center;
+    padding-bottom: 50px;
 }
+
 
 .wpcf7 form>div, .wpcf7 form>p { /* Alignement centre bouton "Envoyer" */
     display: flex;
@@ -251,3 +280,5 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
         font-size: 30px!important;
     }
   }
+
+
