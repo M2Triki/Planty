@@ -1,0 +1,253 @@
+/*
+ Theme Name:   Planty Thème
+ Theme URI:    https://wpastra.com/
+ Description:  Thème enfant pour le site Planty
+ Author:       Matheo
+ Author URI:   http://exemple.com
+ Template:     astra
+ Version:      1.0.0
+ Text Domain:  planty
+*/
+
+
+/***** GENERAL *****/
+
+/***** HEADER *****/
+.ast-primary-header-bar {
+    background-color: white;
+}
+
+.site-logo-img img {
+    max-width: 30%;
+}
+
+.item-commander a.menu-link {
+    background-color:#DC9F96;
+    font-weight: 600;
+    color: white!important;
+    padding: 0 50px;
+}
+
+a.menu-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000!important;
+}
+
+/***** FOOTER *****/
+footer {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-footer-container ul {
+    list-style: none;
+    margin: 0;
+}
+
+
+/***** ACCUEIL *****/
+.image-galerie {
+    width: 50%;
+}
+
+.fontweight-400 {
+    font-weight: 400;
+}
+
+.fontweight-600 {
+    font-weight: 600!important;
+}
+
+.fontweight-800 {
+    font-weight: 800!important;
+}
+
+.fontsize-20 {
+    font-size: 20px;
+}
+
+.maxwidth-75 {
+    max-width: 60%;
+}
+
+.entry-content p, .entry-content h6 {
+    margin: 0;
+}
+
+.backgroundimage-rencontrer {
+    background-image: url(../../uploads/2024/04/Group-2.png);
+    background-repeat: no-repeat;
+    background-size: 12%;
+    background-position: top 20% left 12%;
+}
+
+.backgroundimage-equipe {
+    background-image: url(../../uploads/2024/04/Group-4.png);
+    background-repeat: no-repeat;
+    background-position: right 5% bottom;
+    background-size: 10%;
+}
+
+.backgroundimage-contact {
+    background-image: url(../../uploads/2024/04/Group-16.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0% left 30%;
+}
+
+
+/***** NOUS RENCONTRER *****/
+.wpcf7 form {
+    display: grid;
+    justify-content: center;
+}
+
+.wpcf7 form>div, .wpcf7 form>p { /* Alignement centre bouton "Envoyer" */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+input[type="submit"] { /* Bouton envoyer */
+    background-color: #E0B9B4;
+    border-radius: 5px;
+    padding: 20px 70px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+input[type="submit"]:hover { /* Hover bouton envoyer */
+    background-color: #C02E44;
+    color: white;
+}
+
+.wpcf7-response-output { /* Modification texte réponse */
+    background-color: lightgreen;
+    color: white;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/***** COMMANDER *****/
+.separateur-commander {
+    width: 50%;
+}
+
+
+/* Contact form */
+.section-commande {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.product {
+    background-color: beige;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 90%;
+  }
+
+  .product label {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+    width: 90%;
+  }
+
+.product1 {
+    background-image: url(http://localhost/planty/wp-content/uploads/2024/04/jeremy-bezanger-0QgbyZdhX7k-unsplash-1.png);
+}
+
+.product2 {
+    background-image: url(http://localhost/planty/wp-content/uploads/2024/04/estudio-bloom-tOitjphtIXU-unsplash-1.png);
+}
+
+.product3 {
+    background-image: url(http://localhost/planty/wp-content/uploads/2024/04/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png);
+}
+
+.product4 {
+    background-image: url(http://localhost/planty/wp-content/uploads/2024/04/estudio-bloom-ezqnxsqUZ80-unsplash-1.png);
+}
+
+.option {
+    text-align: center;
+    width: 22%;
+}
+
+  .options-commande {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    border-top: 10px greenyellow;
+  }
+  
+  .quantite {
+    padding: 20px 0;
+  }
+
+.quantite-produits {
+    text-align: center;
+    width: 35%!important;
+}
+  
+  .options-livraison {
+    justify-content: space-around!important;
+    padding: 30px 0;
+  }
+  
+  .data-livraison {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 0 20px;
+}
+
+.titreH2 {
+    font-size: 30px!important;
+    color: white!important;
+}
+
+.data-livraison label {
+    color: white;
+}
+
+.data-livraison:not(:last-child) { /* Bordure à droite de tout les colonnes sauf le dernièr */
+    border-right: 1px solid #ccc;
+  }
+  
+  .bouton-commander {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .fontsize-30mobile {
+        font-size: 30px!important;
+    }
+  }
