@@ -25,16 +25,19 @@ add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
 
 
 
-/*
+
 function filter_admin( $items, $args ) { // Faire disparaître Admin pour les clients
     if ($args->theme_location === 'primary') {
         if (!is_user_logged_in() || !current_user_can('manage_options')) {
-            $items = preg_replace('/<li[^>]*>.*?Admin.*?<\/li>/i', '', $items);
+            $items = "<li>Admin</li>";
         }
     }
     return $items;
 }
-add_filter('wp_nav_menu_items', 'filter_admin', 10, 2); */
+add_filter('wp_nav_menu_items', 'filter_admin', 10, 2);
+
+
+
 
 
 function filter_admin_menu_item($items, $args) {
