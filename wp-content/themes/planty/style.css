@@ -115,7 +115,7 @@ footer {
 }
 
 .backgroundimage-equipe {
-    background-image: url(../../uploads/2024/04/Group-4.png);
+    background-image: url(../../uploads/2024/05/feuille-left.png);
     background-repeat: no-repeat;
     background-position: right 5% bottom;
     background-size: 10%;
@@ -124,7 +124,7 @@ footer {
 .backgroundimage-contact {
     background-image: url(../../uploads/2024/04/Group-16.png);
     background-repeat: no-repeat;
-    background-position: bottom 0% left 30%;
+    background-position: bottom 16% left 30%;
 }
 
 
@@ -135,12 +135,15 @@ footer {
     padding-bottom: 50px;
 }
 
+.wpcf7-form br {
+    display: none;
+}
+
 
 .wpcf7 form>div, .wpcf7 form>p { /* Alignement centre bouton "Envoyer" */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
 }
 
 input[type="submit"] { /* Bouton envoyer */
@@ -229,6 +232,7 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    padding-top: 20px;
     justify-content: space-evenly;
     border-top: 10px greenyellow;
   }
@@ -250,14 +254,15 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
   .data-livraison {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 50%;
     padding: 0 20px;
+    gap: 20px;
 }
 
 .titreH2 {
     font-size: 30px!important;
     color: white!important;
+    margin-bottom: 0 !important;
 }
 
 .data-livraison label {
@@ -266,19 +271,40 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 
 .data-livraison:not(:last-child) { /* Bordure à droite de tout les colonnes sauf le dernièr */
     border-right: 1px solid #ccc;
-  }
-  
-  .bouton-commander {
+}
+
+.data-livraison p {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bouton-commander {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
+}
+
+/***** RESPONSIVE MOBILE *****/
+@media screen and (max-width: 768px) {
+/* General */
+.fontsize-30mobile {
+    font-size: 30px!important;
+}
 
 
-  @media screen and (max-width: 768px) {
-    .fontsize-30mobile {
-        font-size: 30px!important;
-    }
-  }
+
+/* Commander */
+.option {
+    flex: 1 1 45%;
+}
+
+}
 
 
+
+.wpcf7-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
