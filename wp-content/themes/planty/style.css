@@ -260,7 +260,6 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 }
 
 .titreH2 {
-    font-size: 30px!important;
     color: white!important;
     margin-bottom: 0 !important;
 }
@@ -297,6 +296,19 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 /* Commander */
 .option {
     flex: 1 1 45%;
+}
+
+.options-livraison {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.data-livraison {
+    gap: 10px;
+}
+
+.data-livraison:not(:last-child) {
+    border-right: none;
 }
 
 }
