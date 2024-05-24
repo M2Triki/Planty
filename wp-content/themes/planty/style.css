@@ -11,6 +11,10 @@
 
 
 /***** GENERAL *****/
+.page-id-39 .site-content {
+    background-color: #3B8E46;
+}
+
 
 /***** HEADER *****/
 .ast-primary-header-bar {
@@ -75,7 +79,7 @@ footer {
     display: flex;
     justify-content: center;
 }
-  .image-container img {
+.image-container img {
     padding: 0px 250px;
     background-image: url("../../uploads/2024/05/feuille-left.png"), url("../../uploads/2024/05/feuille-right.png");
     background-repeat: no-repeat, no-repeat;
@@ -139,6 +143,11 @@ footer {
     display: none;
 }
 
+.wpcf7-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .wpcf7 form>div, .wpcf7 form>p { /* Alignement centre bouton "Envoyer" */
     display: flex;
@@ -292,7 +301,10 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 }
 
 /* Accueil */
-
+.image-container img {
+    padding: 0;
+    width: 100%!important;
+}
 
 
 
@@ -309,6 +321,7 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 
 .data-livraison {
     gap: 10px;
+    width: 100%;
 }
 
 .data-livraison:not(:last-child) {
@@ -317,16 +330,17 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 
 }
 
+/***** RESPONSIVE TABLET *****/
+@media screen and (max-width: 1024px) {
 
-
-
-
-
-
-
-
-.wpcf7-form label {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
+
+
+
+
+
+
+
+
+
+
