@@ -4,7 +4,7 @@ Tags: backup, transfer, copy, move, clone
 Requires at least: 3.3
 Tested up to: 6.5
 Requires PHP: 5.3
-Stable tag: 7.81
+Stable tag: 7.82
 License: GPLv2 or later
 
 Backup, transfer, copy, and move a site with 1-click. Quick, easy, and reliable.
@@ -24,7 +24,7 @@ Follow these three simple steps, and your site will be live at its new location 
 
 One feature that makes All-in-One WP Migration widely loved (to the tune of over 6,000 5-star user reviews) is that the technical requirements for installing the plugin are simple.
 
-If you have WordPress version between 3.3 and 6.4.2 and PHP version between 5.3 and 8.3, you are good to go. All-in-One WP Migration also supports all versions of MySQL and MariaDB.
+If you have WordPress version between 3.3 and 6.5.3 and PHP version between 5.3 and 8.3, you are good to go. All-in-One WP Migration also supports all versions of MySQL, MariaDB and SQLite.
 
 **Features Spotlight:**
 
@@ -39,6 +39,7 @@ If you have WordPress version between 3.3 and 6.4.2 and PHP version between 5.3 
 * Full product support.
 * Browse WPRESS files online with [Traktor Web](https://traktor.servmask.com)
 * Extract WPRESS files on your computer with [Traktor Desktop](https://traktor.wp-migration.com)
+* New in v7.82: Integration with WordPress Playground, enabling easy migration between SQLite and MySQL.
 * And lots more!
 
 Here are other reasons to use All-in-One WP Migration ...
@@ -96,6 +97,12 @@ All-in-One WP Migration is in full compliance with General Data Protection Regul
 See our [GDPR Compliant Privacy Policy here](https://www.iubenda.com/privacy-policy/946881).
 
 == Changelog ==
+= 7.82 =
+**Added**
+
+* SQLite support
+* WordPress Playground support
+
 = 7.81 =
 **Added**
 
