@@ -332,7 +332,14 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 
 /***** RESPONSIVE TABLET *****/
 @media screen and (max-width: 1024px) {
+.menu-item-51 {
+    order: 3;
+}
 
+.content-align-flex-start .main-header-menu {
+    text-align: center;
+}
+    
 }
 
 
