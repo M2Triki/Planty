@@ -366,6 +366,13 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
     }
 }
 
+@media screen and (max-width: 480px) {
+    .image-container img {
+        padding: 0 80px;
+        width: 110%!important;
+    }
+}
+
 
 
 
