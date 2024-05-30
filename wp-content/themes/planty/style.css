@@ -306,7 +306,7 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 
 /* Accueil */
 .image-container img {
-    padding: 0;
+    padding: 0 100px;
     width: 60%!important;
 }
 
