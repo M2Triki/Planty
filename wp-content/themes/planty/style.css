@@ -177,6 +177,10 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
     font-weight: 600;
 }
 
+.wpcf7-spinner { /* Faire disparaitre le Spinner pour aligner le bouton au centre */
+    display: none;
+}
+
 
 /***** COMMANDER *****/
 .separateur-commander {
@@ -303,7 +307,7 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 /* Accueil */
 .image-container img {
     padding: 0;
-    width: 100%!important;
+    width: 60%!important;
 }
 
 
@@ -339,6 +343,11 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 .content-align-flex-start .main-header-menu {
     text-align: center;
 }
+
+.backgroundimage-contact, .backgroundimage-equipe {
+    background-image: none;
+}
+
     
 }
 
