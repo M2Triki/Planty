@@ -297,6 +297,30 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
     flex-direction: column;
 }
 
+
+/***** RESPONSIVE TABLET *****/
+@media screen and (max-width: 1024px) {
+.menu-item-51 {
+    order: 3;
+}
+
+.content-align-flex-start .main-header-menu {
+    text-align: center;
+}
+
+.backgroundimage-contact, .backgroundimage-equipe {
+    background-image: none;
+}
+
+.image-container img {
+    width: 80%!important;
+    padding: 0 150px;
+}
+
+    
+}
+
+
 /***** RESPONSIVE MOBILE *****/
 @media screen and (max-width: 768px) {
 /* General */
@@ -307,7 +331,7 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 /* Accueil */
 .image-container img {
     padding: 0 100px;
-    width: 60%!important;
+    width: 80%!important;
 }
 
 
@@ -334,21 +358,12 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 
 }
 
-/***** RESPONSIVE TABLET *****/
-@media screen and (max-width: 1024px) {
-.menu-item-51 {
-    order: 3;
-}
 
-.content-align-flex-start .main-header-menu {
-    text-align: center;
-}
-
-.backgroundimage-contact, .backgroundimage-equipe {
-    background-image: none;
-}
-
-    
+@media screen and (max-width: 490px) {
+    .image-container img {
+        padding: 0 80px;
+        width: 80%!important;
+    }
 }
 
 
