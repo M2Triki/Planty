@@ -75,16 +75,6 @@ footer {
     width: 50%;
 }
 
-
-.feuille-gauche {
-    transform: translateX(180px);
-}
-
-.feuille-droite {
-    transform: translateX(-180px);
-}
-
-
 .fontweight-400 {
     font-weight: 400;
 }
@@ -308,23 +298,30 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 
 /***** RESPONSIVE TABLET *****/
 @media screen and (max-width: 1024px) {
-.menu-item-51 {
-    order: 3;
-}
+    .menu-item-51 {
+        order: 3;
+    }
 
-.content-align-flex-start .main-header-menu {
-    text-align: center;
-}
+    .content-align-flex-start .main-header-menu {
+        text-align: center;
+    }
 
-.backgroundimage-contact, .backgroundimage-equipe {
-    background-image: none;
-}
+    .backgroundimage-contact, .backgroundimage-equipe {
+        background-image: none;
+    }
 
-.image-container img {
-    width: 80%!important;
-    padding: 0 150px;
-}
+    .image-container img {
+        width: 80%!important;
+        padding: 0 150px;
+    }
 
+    .feuille-gauche {
+        transform: translateX(150px);
+    }
+    
+    .feuille-droite {
+        transform: translateX(-150px);
+    }
     
 }
 
@@ -340,6 +337,14 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
     .image-container img {
         padding: 0 100px;
         width: 80%!important;
+    }
+
+    .feuille-gauche {
+        transform: translateX(80px);
+    }
+    
+    .feuille-droite {
+        transform: translateX(-80px);
     }
     
     
@@ -366,20 +371,50 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 }
 
 
-@media screen and (max-width: 490px) {
-    .image-container img {
-        padding: 0 80px;
-        width: 80%!important;
+
+/***** RESPONSIVE FEUILLES *****/
+.feuille-gauche {
+    transform: translateX(180px);
+}
+
+.feuille-droite {
+    transform: translateX(-180px);
+}
+
+@media screen and (max-width: 890px) {
+    .feuille-gauche {
+        transform: translateX(120px);
+    }
+    
+    .feuille-droite {
+        transform: translateX(-120px);
     }
 
 }
 
-@media screen and (max-width: 480px) {
-    .image-container img {
-        padding: 0 80px;
-        width: 110%!important;
+
+@media screen and (max-width: 620px) {
+    .feuille-gauche {
+        transform: translateX(60%);
     }
+    
+    .feuille-droite {
+        transform: translateX(-60%);
+    }
+
 }
+
+@media screen and (max-width: 400px) {
+    .feuille-gauche {
+        transform: translateX(50%);
+    }
+    
+    .feuille-droite {
+        transform: translateX(-50%);
+    }
+
+}
+
 
 
 
