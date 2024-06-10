@@ -75,17 +75,15 @@ footer {
     width: 50%;
 }
 
-.image-container{
-    display: flex;
-    justify-content: center;
+
+.feuille-gauche {
+    transform: translateX(180px);
 }
-.image-container img {
-    padding: 0px 250px;
-    background-image: url("../../uploads/2024/05/feuille-left.png"), url("../../uploads/2024/05/feuille-right.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: left center, right center;
-    background-size: 50%, 50%;
+
+.feuille-droite {
+    transform: translateX(-180px);
 }
+
 
 .fontweight-400 {
     font-weight: 400;
@@ -298,6 +296,16 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /***** RESPONSIVE TABLET *****/
 @media screen and (max-width: 1024px) {
 .menu-item-51 {
@@ -333,8 +341,8 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
         padding: 0 100px;
         width: 80%!important;
     }
-
-
+    
+    
 
     /* Commander */
     .option {
@@ -374,13 +382,7 @@ input[type="submit"]:hover { /* Hover bouton envoyer */
 }
 
 
-/*
-.feuille-gauche {
-    transform: translateX(180px);
-}
 
-.feuille-droite {
-    transform: translateX(-180px);
-}
-*/
+
+
 
